@@ -22,9 +22,9 @@ Anda adalah **Principal IT Governance Architect, Lead ISACA Certified Auditor (C
 
 ## 📚 Peta Arsitektur Buku Referensi, Database & Mesin CLI (`cobit-it-auditor`)
 
-Skill ini dibangun sebagai **Buku Ensiklopedia & Perangkat Kerja Lengkap COBIT 2019** yang terdiri atas **11 Bab Buku Referensi Mendalam**, **Database JSON Terstruktur Lengkap**, dan **Mesin CLI Python Otomatis**:
+Skill ini dibangun sebagai **Buku Ensiklopedia & Perangkat Kerja Lengkap COBIT 2019** yang terdiri atas **13 Bab Buku Referensi Mendalam**, **Database JSON Terstruktur Lengkap**, dan **Mesin CLI Python Otomatis**:
 
-### 1. Indeks 11 Bab Buku Referensi (`references/`)
+### 1. Indeks 13 Bab Buku Referensi (`references/`)
 
 | Bab | File Referensi | Cakupan Materi Utama |
 | :---: | :--- | :--- |
@@ -39,6 +39,8 @@ Skill ini dibangun sebagai **Buku Ensiklopedia & Perangkat Kerja Lengkap COBIT 2
 | **Bab 9** | [`references/09-design-factors-and-tailoring-methodology.md`](references/09-design-factors-and-tailoring-methodology.md) | **COBIT 2019 Design Guide**: Bedah Lengkap **11 Design Factors (`DF1`–`DF11`)**, termasuk **19 Kategori Risiko TI (`DF3`)**, **20 Masalah Aktual I&T (`DF4` Kode A–T)**, 4 Langkah *Governance System Design Workflow*, dan **7 Parameter Management Awareness Diagnostic Tool**. |
 | **Bab 10** | [`references/10-implementation-guide-7-phases-lifecycle.md`](references/10-implementation-guide-7-phases-lifecycle.md) | **COBIT 2019 Implementation Guide**: Siklus Hidup **7 Fase Implementasi** dengan **3 Cincin Konsentris** (*Program Management [PM]*, *Change Enablement [CE]*, *Continual Improvement [CI]*), Pemetaan **10 Pain Points (`PP01`–`PP10`)** & **8 Trigger Events (`TE01`–`TE08`)**, Rincian Tugas/Input/Output/RACI/CSFs Fase 1–7, dan **Template EGIT Business Case**. |
 | **Bab 11** | [`references/11-raci-roles-sod-crosswalk-and-5c-audit-templates.md`](references/11-raci-roles-sod-crosswalk-and-5c-audit-templates.md) | Direktori **33 Peran & Struktur Organisasi Resmi (`Figure A.3`)** beserta beban `A`/`R`, **12 Pola Konflik Segregation of Duties (SoD) Kritis**, **Matriks Crosswalk Multi-Framework & Regulasi Indonesia** (ISO 27001/38500/20000, NIST CSF 2.0/800-53, ITIL 4, TOGAF, PMBOK, CIS v8, **UU PDP No. 27/2022**, **POJK 11/2022 & SEOJK 29/2022**, **SPBE**, **BSSN**), **Kamus Penerjemah Temuan Teknis ke Risiko Bisnis**, serta **Template Temuan 5C ISACA & LHA**. |
+| **Bab 12** | [`references/12-cobit-focus-areas-infosec-risk-devops-cloud-sme.md`](references/12-cobit-focus-areas-infosec-risk-devops-cloud-sme.md) | **COBIT 2019 Focus Area Guides**: Panduan Fokus Area untuk **Information Security**, **IT Risk (Integrasi CRISC & 5 Elemen Skenario Risiko)**, **DevOps & CI/CD Automated Gatekeepers**, **Cloud Shared Responsibility Matrix & FinOps**, serta **Small & Medium Enterprises (SME)**. |
+| **Bab 13** | [`references/13-emerging-tech-ai-governance-and-zero-trust-cobit.md`](references/13-emerging-tech-ai-governance-and-zero-trust-cobit.md) | **Tata Kelola Teknologi Baru**: Audit & Tata Kelola **Artificial Intelligence / GenAI / LLM** (selaras **ISO/IEC 42001** & **NIST AI RMF**) serta **Zero Trust Architecture (NIST SP 800-207)** menggunakan lensa COBIT 2019 (`EDM03`, `APO12`, `APO13`, `APO14`, `BAI03`, `DSS05`). |
 
 ---
 

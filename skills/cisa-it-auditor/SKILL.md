@@ -18,7 +18,7 @@ Skill ini adalah **Buku Induk Referensi (*Master Reference Book*)** sekaligus **
 
 Seluruh materi buku disimpan secara terstruktur di dalam direktori skill ini. **Baca bab referensi yang relevan menggunakan `read_file` dan jalankan `scripts/cisa_cli.py` untuk melakukan kalkulasi dan ekstraksi data presisi:**
 
-### A. 10 Bab Buku Referensi (`references/`)
+### A. 13 Bab Buku Referensi (`references/`)
 - **[Bab 1: Standar Profesional ISACA ITAF (4th Edition), Kode Etik, dan Audit Charter](references/01-itaf-standards-ethics-and-audit-charter.md)**
   - Bobot 5 Domain CISA, 7 Kode Etik ISACA, 17 Standar ITAF (`1001`–`1402`) & 17 Pedoman (`2001`–`2402`), perbandingan *Audit Charter vs. Engagement Letter*, *Attestation vs. Direct Engagement*, serta integrasi ISO 19011 / 27007 / 27008.
 - **[Bab 2: Domain 1 — Proses Audit SI, Statistical Sampling (IIA), dan CAATs (21%)](references/02-domain1-is-auditing-process-sampling-and-caats.md)**
@@ -39,6 +39,12 @@ Seluruh materi buku disimpan secara terstruktur di dalam direktori skill ini. **
   - Perbandingan kriptografi **Simetris (AES/3DES) vs. Asimetris (RSA/ECC/DH)**, fungsi **Hash (SHA-2/SHA-3) & HMAC**, aturan mutlak penguncian kunci untuk **Kerahasiaan vs. Digital Signature (Non-Repudiation) vs. Digital Envelope**, ekosistem **PKI (CA, RA, CPS, CRL, OCSP)**, **14 Serangan Siber & Mitigasinya** (*SQLi, XSS, CSRF, Buffer Overflow, MitM, ARP/DNS Poisoning, DDoS, Phishing, Ransomware, Logic Bomb*), **VA vs. Penetration Testing** (*Black/White/Gray/Double-Blind*), **6 Fase Incident Response**, dan prosedur **Digital Forensics** (*Order of Volatility, Write-Blocker, Bit-Stream Image, Hash Verification, Chain of Custody*).
 - **[Bab 10: Matriks Lengkap SOX/ITGC Key Controls (`SOXIT.01`–`SOXIT.04`), Daftar PBC, Panduan Teknis Walkthrough, dan Studi Kasus Nyata](references/10-soxit-itgc-key-controls-pbc-walkthrough-and-case-studies.md)**
   - Matriks lengkap 18 kontrol kunci `SOXIT.01`–`SOXIT.04` (TDE, TOE, PBC), tabel perintah audit teknis **Unix/Solaris/Linux** (`/etc/passwd`, `/etc/shadow`, `UID=0`, `/etc/inetd.conf`, `cron.allow`), **Oracle Database** (`DBA_USERS`, `DBA_PROFILES`, `DBA_SYS_PRIVS`, `DBA_TAB_PRIVS`, `PUBLIC`, `DBA_AUDIT_TRAIL`), **SQL Server** (`sys.sql_logins`, `xp_cmdshell`), serta pembahasan lengkap **Studi Kasus 1: PT XYZ (SAP ERP)** dan **Studi Kasus 2: PT Ramayana Lestari Sentosa Tbk (MARIS/MAGIC)**.
+- **[Bab 11: Pustaka Skrip Ekstraksi Bukti Teknis (Live Audit Queries) — SAP ERP/S4HANA, Active Directory, Cloud (AWS/Azure/GCP), & Kubernetes/CI-CD](references/11-live-technical-audit-scripts-sap-ad-cloud-k8s.md)**
+  - Daftar lengkap **SAP T-Codes** (`SU01`, `SUIM`, `PFCG`, `SCC4`, `RZ10/RZ11`, `STMS`, `SM19/SM20`, `SM36/SM37`, `OB52`) & Tabel (`USR02`, `UST04`, `AGR_USERS`, `T000`, `E070`), skrip PowerShell **Active Directory**, kontrol keamanan **AWS/Azure/GCP**, serta audit **Docker/Kubernetes & GitHub/GitLab Branch Protection SoD**.
+- **[Bab 12: Pembaruan Kurikulum CISA 28th Edition (2024–2026) — Audit Sistem AI/LLM, Zero Trust, & Playbook Ransomware](references/12-cisa-28e-ai-auditing-zero-trust-and-ransomware-playbook.md)**
+  - Audit siklus hidup **AI/ML/LLM** (*Data Poisoning, Algorithmic Bias, Overfitting, Prompt Injection, Hallucination, Model Drift, Explainable AI*), **Playbook Audit Ketahanan Ransomware (3-2-1-1-0 Immutable Backup)**, serta audit **Blockchain, Smart Contracts, & IoT/OT SCADA**.
+- **[Bab 13: Masterclass "ISACA Exam Mindset" & Bank 30 Skenario Soal CISA (QAE)](references/13-cisa-exam-qae-mindset-and-scenario-bank.md)**
+  - 10 Hukum Emas menjawab soal jebakan CISA (*FIRST, NEXT, BEST, MOST, PRIMARY*) beserta 30 skenario kasus lintas Domain 1–5 dan bedah rasional jawaban benar vs. pengecoh.
 
 ---
 

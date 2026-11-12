@@ -68,6 +68,14 @@ TECHNICAL_GUIDES = {
         ("V$PARAMETER (audit_trail) & DBA_AUDIT_TRAIL", "Verify audit_trail is enabled (DB/OS) and audit_sys_operations=TRUE with protected audit logs."),
         ("SQL Server: sys.sql_logins & xp_cmdshell", "Verify 'sa' is disabled/renamed, is_policy_checked=1, sysadmin role is restricted, and xp_cmdshell=0."),
     ],
+    "SAP": [
+        ("SU01 / SUIM & Table USR02", "Extract active users, lock status (UFLAG), user types (USTYP), validity dates, and last logon (TRDAT) to detect dormant/terminated users."),
+        ("Table UST04 & AGR_USERS", "Identify all accounts holding SAP_ALL, SAP_NEW, S_TABU_DIS (02), S_DEVELOP (01/02 in Prod), or S_USER_GRP."),
+        ("SCC4 & Table T000", "Verify Production Client is closed to direct changes (CCCORACTIV = 2 'No changes allowed')."),
+        ("RZ10 / RZ11 / RSPARAM", "Verify login/min_password_lng (>=8), login/password_expiration_time (<=90), login/fails_to_user_lock (<=5), login/no_automatic_user_sapstar (1)."),
+        ("STMS & Table E070", "Extract 100% of production transports; verify Developer != Importer (SoD on S_CTS_ADMI) and verify UAT sign-off."),
+        ("SM19 / SM20 & Firefighter", "Verify Security Audit Log is active and all Emergency/FireCall sessions have post-session supervisory sign-off."),
+    ],
 }
 
 ROLE_ALIASES = {
@@ -238,8 +246,13 @@ def cmd_lookup(args):
         for area, desc in TECHNICAL_GUIDES["ORACLE"]:
             print(f"  * [{area}]\n    Audit Check: {desc}")
         return
+    if target == "SAP":
+        print("=== SAP ERP / S/4HANA Technical Audit T-Codes & Tables Guide ===")
+        for area, desc in TECHNICAL_GUIDES["SAP"]:
+            print(f"  * [{area}]\n    Audit Check: {desc}")
+        return
 
-    print(f"No direct ID match for '{args.id}'. Try 'search --query {args.id}' or IDs like D1..D5, T1..T39, 1001..1402, SOXIT.01..SOXIT.04, BIA, UNIX, ORACLE.")
+    print(f"No direct ID match for '{args.id}'. Try 'search --query {args.id}' or IDs like D1..D5, T1..T39, 1001..1402, SOXIT.01..SOXIT.04, BIA, UNIX, ORACLE, SAP.")
 
 
 def cmd_sampling(args):
@@ -497,6 +510,59 @@ def cmd_search(args):
         print(f"  * {h}")
 
 
+def cmd_caats(args):
+    """Execute CAATs Benford's Law First-Digit Fraud Analysis or HR-vs-Active User Reconciliation."""
+    if args.test == "benford":
+        raw_vals = [x.strip() for x in args.values.split(",") if x.strip()]
+        first_digits = {d: 0 for d in range(1, 10)}
+        total_valid = 0
+        for val in raw_vals:
+            clean = val.lstrip("-$Rp ").replace(",", "")
+            for ch in clean:
+                if ch in "123456789":
+                    first_digits[int(ch)] += 1
+                    total_valid += 1
+                    break
+        if total_valid == 0:
+            sys.stderr.write("Error: No valid non-zero numbers provided for Benford analysis.\n")
+            sys.exit(1)
+
+        print(f"=== CISA Domain 1 CAATs: Benford's Law First-Digit Fraud & Anomaly Analysis (N = {total_valid}) ===")
+        print(f"{'Digit':<7} | {'Observed':<10} | {'Obs %':<9} | {'Benford Expected %':<19} | {'Deviation':<10} | {'Status'}")
+        print("-" * 78)
+        chi_sq = 0.0
+        for d in range(1, 10):
+            expected_pct = math.log10(1.0 + 1.0 / d)
+            expected_cnt = total_valid * expected_pct
+            obs_cnt = first_digits[d]
+            obs_pct = obs_cnt / total_valid
+            diff_pct = (obs_pct - expected_pct) * 100.0
+            if expected_cnt > 0:
+                chi_sq += ((obs_cnt - expected_cnt) ** 2) / expected_cnt
+            flag = "SPIKE (Investigate!)" if diff_pct > 10.0 else "Normal"
+            print(f"{d:<7} | {obs_cnt:<10} | {obs_pct*100:>6.2f}%  | {expected_pct*100:>16.2f}%  | {diff_pct:>+7.2f}%  | {flag}")
+        print("-" * 78)
+        # Critical Chi-Square at df=8, alpha=0.05 is 15.507
+        verdict = "HIGH ANOMALY / POTENTIAL MANIPULATION (Chi-Square > 15.51 at alpha=0.05)" if chi_sq > 15.507 else "CONFORMS TO BENFORD'S LAW (Chi-Square <= 15.51)"
+        print(f"Chi-Square Statistic (df=8) : {chi_sq:.3f}  -->  {verdict}")
+        print("CISA Audit Note             : Spikes on digits 8 or 9 often indicate artificial splitting just below approval thresholds!")
+
+    elif args.test == "reconcile-users":
+        terminated = {u.strip().lower() for u in args.terminated.split(",") if u.strip()}
+        active = {u.strip().lower() for u in args.active.split(",") if u.strip()}
+        orphans = sorted(terminated.intersection(active))
+        print("=== CISA Domain 5 / SOXIT.03.C3 CAATs: HR Terminated vs. Active System Users Reconciliation ===")
+        print(f"Terminated HR List Count : {len(terminated)}")
+        print(f"Active System User Count : {len(active)}")
+        print(f"Orphaned Active Accounts : {len(orphans)}")
+        if orphans:
+            print("CRITICAL FINDING (SOXIT.03.C3 Violation): Terminated employees still active in production:")
+            for acc in orphans:
+                print(f"  [!] {acc}  --> Immediate revocation & substantive transaction log review required!")
+        else:
+            print("Result: PASS (Zero terminated employees found in active user population).")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="CISA IT Auditor CLI Engine (ISACA CRM 27e / ITAF 4e / IIA Sampling / SOX ITGC)")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -548,6 +614,13 @@ def build_parser() -> argparse.ArgumentParser:
     p_search = sub.add_parser("search", help="Full-text search across CISA Domains, Tasks, ITAF Standards, and SOXIT Controls")
     p_search.add_argument("--query", required=True, help="Keyword to search")
     p_search.set_defaults(func=cmd_search)
+
+    p_caats = sub.add_parser("caats", help="Run CAATs Data Analytics (Benford's Law First-Digit Test or HR Terminated vs Active Users)")
+    p_caats.add_argument("--test", choices=["benford", "reconcile-users"], default="benford")
+    p_caats.add_argument("--values", default="", help="Comma-separated transaction values for Benford test")
+    p_caats.add_argument("--terminated", default="", help="Comma-separated terminated user IDs from HR")
+    p_caats.add_argument("--active", default="", help="Comma-separated active user IDs from system")
+    p_caats.set_defaults(func=cmd_caats)
 
     return parser
 

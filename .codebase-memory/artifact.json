@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "9b360e21445f1d7da2b8d8b8800580c7c97234a0",
+    "indexed_at": "2026-11-12T03:27:07Z",
+    "project": "IT_Auditor",
+    "nodes": 1114,
+    "edges": 1428,
+    "original_size": 6684672,
+    "compressed_size": 564733,
+    "compression_level": 9
+}

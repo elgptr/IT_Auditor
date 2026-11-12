@@ -1,0 +1,1367 @@
+{
+  "metadata": {
+    "framework": "ISACA CISA (Certified Information Systems Auditor) — 27th Edition & ITAF 4th Edition",
+    "sources": [
+      "ISACA CISA Review Manual 27th Edition",
+      "ISACA IT Audit Framework (ITAF) 4th Edition",
+      "Hemang Doshi CISA Study Guide & Richard E. Cascarino Complete CISA Guide",
+      "IIA Internal Audit Sampling Whitepaper (2020)",
+      "SOX/ITGC Key Control Matrix, TDE/TOE Attributes & PBC Request v1.2",
+      "EY GAM S07_100 ITGC Walkthrough & Case Study PT XYZ"
+    ],
+    "counts": {
+      "domains": 5,
+      "tasks": 39,
+      "itaf_standards": 17,
+      "soxit_key_controls": 18
+    }
+  },
+  "domains": [
+    {
+      "id": "D1",
+      "name": "Information Systems Auditing Process",
+      "weight_pct": 21,
+      "approx_questions": 32,
+      "parts": [
+        {
+          "part": "Part A: Planning",
+          "topics": [
+            "1.1 IS Audit Standards, Guidelines and Codes of Ethics (ITAF 4th Ed.)",
+            "1.2 Business Processes & Audit Charter",
+            "1.3 Types of Controls (Preventive, Detective, Corrective, Deterrent, Compensating)",
+            "1.4 Risk-Based Audit Planning & Audit Risk Model (AR = IR x CR x DR)",
+            "1.5 Types of Audits and Assessments (Internal, External, Integrated, Forensic, SOC 1/2/3)"
+          ]
+        },
+        {
+          "part": "Part B: Execution",
+          "topics": [
+            "1.6 Audit Project Management, Audit Phases, Workpapers & Fraud/Irregularities",
+            "1.7 Sampling Methodology (Compliance/Attribute vs Substantive/Variable & MUS Sampling)",
+            "1.8 Audit Evidence Collection Techniques & Reliability Rules",
+            "1.9 Data Analytics, CAATs (ITF, SCARF, Snapshot, Audit Hooks, CIS) & Continuous Auditing",
+            "1.10 Reporting and Communication Techniques (5C Findings, Exit Interview, Follow-up)",
+            "1.11 Quality Assurance & Control Self-Assessment (CSA)"
+          ]
+        }
+      ],
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T11",
+        "T36",
+        "T37",
+        "T38"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Governance and Management of IT",
+      "weight_pct": 17,
+      "approx_questions": 25,
+      "parts": [
+        {
+          "part": "Part A: IT Governance",
+          "topics": [
+            "2.1 IT Governance (EGIT), Information Security Governance, IT Strategy & Data Governance",
+            "2.2 IT-Related Frameworks (COBIT 2019, ISO/IEC 27001, ITIL, TOGAF, COSO)",
+            "2.3 IT Standards, Policies, Procedures and Guidelines Hierarchy",
+            "2.4 Organizational Structure, IT Steering Committee & Segregation of Duties (SoD) Matrix",
+            "2.5 Enterprise Architecture (EA)",
+            "2.6 Enterprise Risk Management (ERM) & Quantitative/Qualitative Risk Analysis (ALE=SLE*ARO)",
+            "2.7 Maturity Models (CMMI, IDEAL)",
+            "2.8 Laws, Regulations and Industry Standards (GRC, Privacy, Banking)"
+          ]
+        },
+        {
+          "part": "Part B: IT Management",
+          "topics": [
+            "2.9 IT Resource Management, Portfolio Mgmt, HR Security Controls & IT Financial Mgmt",
+            "2.10 IT Service Provider Acquisition & Management (Outsourcing, Cloud Governance, Right to Audit, SOC Reports)",
+            "2.11 IT Performance Monitoring and Reporting (IT Balanced Scorecard, KPIs, KGIs)",
+            "2.12 Quality Assurance (QA) and Quality Management of IT"
+          ]
+        }
+      ],
+      "tasks": [
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T15",
+        "T20",
+        "T21",
+        "T25",
+        "T34",
+        "T39"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Information Systems Acquisition, Development and Implementation",
+      "weight_pct": 12,
+      "approx_questions": 18,
+      "parts": [
+        {
+          "part": "Part A: IS Acquisition and Development",
+          "topics": [
+            "3.1 Project Governance and Management (WBS, CPM, PERT, Earned Value Analysis / EVA, FPA, Timeboxing)",
+            "3.2 Business Case and Feasibility Analysis",
+            "3.3 System Development Methodologies (Waterfall, V-Model, Agile, Prototyping, RAD, DevOps, Reverse Engineering, RFP/Acquisition)",
+            "3.4 Control Identification and Design (IT Application Controls / ITAC: Input, Processing, Output Controls)"
+          ]
+        },
+        {
+          "part": "Part B: IS Implementation",
+          "topics": [
+            "3.5 Testing Methodologies (Unit, Integration, System, Regression, Sociability, Pilot, Parallel, White/Black Box, Alpha/Beta, UAT)",
+            "3.6 Configuration and Release Management",
+            "3.7 System Migration, Data Conversion & Changeover Techniques (Parallel, Phased, Abrupt Cutover)",
+            "3.8 Post-Implementation Review (PIR) & Certification/Accreditation"
+          ]
+        }
+      ],
+      "tasks": [
+        "T14",
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T27"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Information Systems Operations and Business Resilience",
+      "weight_pct": 23,
+      "approx_questions": 35,
+      "parts": [
+        {
+          "part": "Part A: IS Operations",
+          "topics": [
+            "4.1 Common Technology Components (Hardware, USB Risks/Controls, RFID Risks/Controls)",
+            "4.2 IT Asset Management (ITAM) & Software Licensing",
+            "4.3 Job Scheduling and Production Process Automation",
+            "4.4 System Interfaces (Risks & Controls)",
+            "4.5 End-User Computing (EUC / Spreadsheet Controls)",
+            "4.6 Data Governance, Data Quality & Data Life Cycle",
+            "4.7 Systems Performance Management (OS Parameters, Utility Programs, Capacity Management)",
+            "4.8 Problem and Incident Management (Service/Help Desk, RCA)",
+            "4.9 Change, Configuration, Release, Patch & Emergency Change Management",
+            "4.10 IT Service Level Management (SLA, OLA, UC)",
+            "4.11 Database Management (DBMS Models, Normalization vs Denormalization, ACID, Controls)"
+          ]
+        },
+        {
+          "part": "Part B: Business Resilience",
+          "topics": [
+            "4.12 Business Impact Analysis (BIA: RTO, RPO, WRT, MTD/MTO, SDO)",
+            "4.13 System & Telecom Resiliency (RAID, Clustering, Alternative/Diverse Routing)",
+            "4.14 Data Backup, Storage and Restoration (Full, Incremental, Differential, Offsite, GFS Rotation)",
+            "4.15 Business Continuity Plan (BCP Lifecycle, Components, Auditing BCP)",
+            "4.16 Disaster Recovery Plans (DRP Recovery Sites: Mirrored, Hot, Warm, Cold, Mobile, Reciprocal; 6 DRP Test Methods)"
+          ]
+        }
+      ],
+      "tasks": [
+        "T13",
+        "T20",
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25",
+        "T26",
+        "T27",
+        "T28",
+        "T33"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "Protection of Information Assets",
+      "weight_pct": 27,
+      "approx_questions": 40,
+      "parts": [
+        {
+          "part": "Part A: Information Asset Security and Control",
+          "topics": [
+            "5.1 Information Asset Security Frameworks, Data Ownership (Owner, Custodian, Admin, User)",
+            "5.2 Privacy Principles & Audit Considerations",
+            "5.3 Physical Access and Environmental Controls (Mantraps, Biometrics, Fire Suppression, UPS/Generators, HVAC)",
+            "5.4 Identity and Access Management (MAC/DAC/RBAC, Passwords, Tokens, Biometrics FAR/FRR/CER, SSO Kerberos/SAML, Audit Logs, DLP)",
+            "5.5 Network and Endpoint Security (OSI Model, Firewalls, DMZ Architectures, IDS/IPS, VPN, Wireless, Shadow IT)",
+            "5.6 Data Classification",
+            "5.7 Data Encryption (Symmetric vs Asymmetric, Hashing, Digital Signatures, Digital Envelope, TLS, IPsec, SSH, S/MIME)",
+            "5.8 Public Key Infrastructure (PKI: CA, RA, CRL, OCSP)",
+            "5.9 Web-Based Communication Technologies (VoIP, PBX Risks)",
+            "5.10 Virtualized & Cloud Environments",
+            "5.11 Mobile, Wireless and IoT Devices (BYOD, MDM)"
+          ]
+        },
+        {
+          "part": "Part B: Security Event Management",
+          "topics": [
+            "5.12 Security Awareness Training & Social Engineering Defense",
+            "5.13 Information System Attack Methods (Phishing, SQLi, XSS, Buffer Overflow, DDoS, MitM, Ransomware, Zero-Day)",
+            "5.14 Security Testing Tools and Techniques (Vulnerability Assessment vs Penetration Testing)",
+            "5.15 Security Monitoring Tools and Techniques (SIEM, honeypots, log correlation)",
+            "5.16 Incident Response Management Phases",
+            "5.17 Evidence Collection and Digital Forensics (Order of Volatility, Chain of Custody, Bit-Stream Imaging)"
+          ]
+        }
+      ],
+      "tasks": [
+        "T2",
+        "T26",
+        "T29",
+        "T30",
+        "T31",
+        "T32",
+        "T33",
+        "T34",
+        "T35",
+        "T39"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "domains": [
+        "D1"
+      ],
+      "text": "Plan an audit to determine whether information systems are protected, controlled, and provide value to the organization."
+    },
+    {
+      "id": "T2",
+      "domains": [
+        "D1",
+        "D5"
+      ],
+      "text": "Conduct an audit in accordance with IS audit standards and a risk-based IS audit strategy."
+    },
+    {
+      "id": "T3",
+      "domains": [
+        "D1"
+      ],
+      "text": "Communicate audit progress, findings, results and recommendations to stakeholders."
+    },
+    {
+      "id": "T4",
+      "domains": [
+        "D1"
+      ],
+      "text": "Conduct audit follow-up to evaluate whether risk has been sufficiently addressed."
+    },
+    {
+      "id": "T5",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the IT strategy for alignment with the organization's strategies and objectives."
+    },
+    {
+      "id": "T6",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the effectiveness of IT governance structure and IT organizational structure."
+    },
+    {
+      "id": "T7",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the organization's management of IT policies and practices."
+    },
+    {
+      "id": "T8",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the organization's IT policies and practices for compliance with regulatory and legal requirements."
+    },
+    {
+      "id": "T9",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate IT resource and portfolio management for alignment with the organization's strategies and objectives."
+    },
+    {
+      "id": "T10",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the organization's risk management policies and practices."
+    },
+    {
+      "id": "T11",
+      "domains": [
+        "D1",
+        "D2"
+      ],
+      "text": "Evaluate IT management and monitoring of controls."
+    },
+    {
+      "id": "T12",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate the monitoring and reporting of IT key performance indicators (KPIs)."
+    },
+    {
+      "id": "T13",
+      "domains": [
+        "D4"
+      ],
+      "text": "Evaluate the organization's ability to continue business operations."
+    },
+    {
+      "id": "T14",
+      "domains": [
+        "D3"
+      ],
+      "text": "Evaluate whether the business case for proposed changes to information systems meet business objectives."
+    },
+    {
+      "id": "T15",
+      "domains": [
+        "D2"
+      ],
+      "text": "Evaluate whether IT supplier selection and contract management processes align with business requirements."
+    },
+    {
+      "id": "T16",
+      "domains": [
+        "D3"
+      ],
+      "text": "Evaluate the organization's project management policies and practices."
+    },
+    {
+      "id": "T17",
+      "domains": [
+        "D3"
+      ],
+      "text": "Evaluate controls at all stages of the information systems development life cycle (SDLC)."
+    },
+    {
+      "id": "T18",
+      "domains": [
+        "D3"
+      ],
+      "text": "Evaluate the readiness of information systems for implementation and migration into production."
+    },
+    {
+      "id": "T19",
+      "domains": [
+        "D3"
+      ],
+      "text": "Conduct post-implementation review of systems to determine whether project deliverables, controls and requirements are met."
+    },
+    {
+      "id": "T20",
+      "domains": [
+        "D2",
+        "D4"
+      ],
+      "text": "Evaluate whether IT service management practices align with business requirements."
+    },
+    {
+      "id": "T21",
+      "domains": [
+        "D2",
+        "D4"
+      ],
+      "text": "Conduct periodic review of information systems and enterprise architecture."
+    },
+    {
+      "id": "T22",
+      "domains": [
+        "D4"
+      ],
+      "text": "Evaluate IT operations to determine whether they are controlled effectively and continue to support the organization's objectives."
+    },
+    {
+      "id": "T23",
+      "domains": [
+        "D4"
+      ],
+      "text": "Evaluate IT maintenance practices to determine whether they are controlled effectively and continue to support the organization's objectives."
+    },
+    {
+      "id": "T24",
+      "domains": [
+        "D4"
+      ],
+      "text": "Evaluate database management practices."
+    },
+    {
+      "id": "T25",
+      "domains": [
+        "D2",
+        "D4"
+      ],
+      "text": "Evaluate data governance policies and practices."
+    },
+    {
+      "id": "T26",
+      "domains": [
+        "D4",
+        "D5"
+      ],
+      "text": "Evaluate problem and incident management policies and practices."
+    },
+    {
+      "id": "T27",
+      "domains": [
+        "D3",
+        "D4"
+      ],
+      "text": "Evaluate change, configuration, release, and patch management policies and practices."
+    },
+    {
+      "id": "T28",
+      "domains": [
+        "D4"
+      ],
+      "text": "Evaluate end-user computing to determine whether the processes are effectively controlled."
+    },
+    {
+      "id": "T29",
+      "domains": [
+        "D5"
+      ],
+      "text": "Evaluate the organization's information security and privacy policies and practices."
+    },
+    {
+      "id": "T30",
+      "domains": [
+        "D5"
+      ],
+      "text": "Evaluate physical and environmental controls to determine whether information assets are adequately safeguarded."
+    },
+    {
+      "id": "T31",
+      "domains": [
+        "D5"
+      ],
+      "text": "Evaluate logical security controls to verify the confidentiality, integrity, and availability of information."
+    },
+    {
+      "id": "T32",
+      "domains": [
+        "D5"
+      ],
+      "text": "Evaluate data classification practices for alignment with the organization's policies and applicable external requirements."
+    },
+    {
+      "id": "T33",
+      "domains": [
+        "D4",
+        "D5"
+      ],
+      "text": "Evaluate policies and practices related to asset life cycle management."
+    },
+    {
+      "id": "T34",
+      "domains": [
+        "D2",
+        "D5"
+      ],
+      "text": "Evaluate the information security program to determine its effectiveness and alignment with the organization's strategies and objectives."
+    },
+    {
+      "id": "T35",
+      "domains": [
+        "D5"
+      ],
+      "text": "Perform technical security testing to identify potential threats and vulnerabilities."
+    },
+    {
+      "id": "T36",
+      "domains": [
+        "D1"
+      ],
+      "text": "Utilize data analytics tools to streamline audit processes."
+    },
+    {
+      "id": "T37",
+      "domains": [
+        "D1"
+      ],
+      "text": "Provide consulting services and guidance to the organization in order to improve the quality and control of information systems."
+    },
+    {
+      "id": "T38",
+      "domains": [
+        "D1"
+      ],
+      "text": "Identify opportunities for process improvement in the organization's IT policies and practices."
+    },
+    {
+      "id": "T39",
+      "domains": [
+        "D2",
+        "D5"
+      ],
+      "text": "Evaluate potential opportunities and threats associated with emerging technologies, regulations, and industry practices."
+    }
+  ],
+  "itaf_standards": [
+    {
+      "id": "1001",
+      "guideline_id": "2001",
+      "category": "General Standards (1000 Series)",
+      "name": "Audit Charter",
+      "statements": [
+        "1001.1 The IT audit and assurance function shall document the audit function appropriately in an audit charter, indicating purpose, responsibility, authority and accountability.",
+        "1001.2 The IT audit and assurance function shall have the audit charter agreed upon and formally approved by those charged with governance and oversight of the audit function, e.g., the board of directors and/or the audit committee.",
+        "1001.3 The IT audit and assurance function shall communicate the audit charter to executive/senior management. Also, relevant elements of the audit charter shall be shared with groups being audited at entrance meetings and/or through engagement letters.",
+        "1001.4 Through review of the audit charter on a periodic basis, the audit and assurance function's responsibilities, as reflected in the audit charter, shall remain aligned with the enterprise's mission and strategies."
+      ]
+    },
+    {
+      "id": "1002",
+      "guideline_id": "2002",
+      "category": "General Standards (1000 Series)",
+      "name": "Organizational Independence",
+      "statements": [
+        "1002.1 The IT audit and assurance function shall be free from conflicts of interest and undue influence in all matters related to audit and assurance engagements. Any impairment of independence (in fact or appearance) is identified and disclosed to the appropriate parties.",
+        "1002.2 The IT audit and assurance function shall have a functional reporting relationship (e.g., reporting to the board of directors / audit committee) that supports the function's ability to remain free from undue influence.",
+        "1002.3 The IT audit and assurance function shall have an administrative reporting relationship that supports the function's unhindered performance of its responsibilities (e.g., scope of engagement, fieldwork or reporting)."
+      ]
+    },
+    {
+      "id": "1003",
+      "guideline_id": "2003",
+      "category": "General Standards (1000 Series)",
+      "name": "Auditor Objectivity",
+      "statements": [
+        "1003.1 IT audit and assurance practitioners shall be objective in all matters related to audit and assurance engagements."
+      ]
+    },
+    {
+      "id": "1004",
+      "guideline_id": "2004",
+      "category": "General Standards (1000 Series)",
+      "name": "Reasonable Expectation",
+      "statements": [
+        "1004.1 IT audit and assurance practitioners shall have reasonable expectation that the engagement can be completed in accordance with applicable IT audit and assurance standards and, where required, other industry standards or applicable laws and regulations that will result in a professional opinion or conclusion.",
+        "1004.2 IT audit and assurance practitioners shall have reasonable expectation that the scope of the engagement enables a conclusion on the subject matter and that any scope limitations are addressed.",
+        "1004.3 IT audit and assurance practitioners shall have reasonable expectation that management understands its obligations and responsibilities with respect to providing appropriate, relevant and timely information required to perform the engagement."
+      ]
+    },
+    {
+      "id": "1005",
+      "guideline_id": "2005",
+      "category": "General Standards (1000 Series)",
+      "name": "Due Professional Care",
+      "statements": [
+        "1005.1 In accordance with ISACA's Code of Professional Ethics, auditors will exercise due diligence and professional care. They will maintain high standards of conduct and character, and refrain from engaging in acts that may discredit themselves or the profession. Privacy and confidentiality of information obtained during the course of the auditor's duties should be maintained."
+      ]
+    },
+    {
+      "id": "1006",
+      "guideline_id": "2006",
+      "category": "General Standards (1000 Series)",
+      "name": "Proficiency",
+      "statements": [
+        "1006.1 IT audit and assurance practitioners, collectively with others assisting with the audit and assurance engagement, shall possess the professional competence to perform the work required.",
+        "1006.2 IT audit and assurance practitioners shall possess adequate knowledge of the subject matter to perform their roles in IT audit and assurance engagements.",
+        "1006.3 IT audit and assurance practitioners shall maintain professional competence through appropriate continuing professional education (CPE) and training."
+      ]
+    },
+    {
+      "id": "1007",
+      "guideline_id": "2007",
+      "category": "General Standards (1000 Series)",
+      "name": "Assertions",
+      "statements": [
+        "1007.1 IT audit and assurance practitioners shall review the assertions against which the subject matter will be assessed to determine that such assertions are capable of being audited and that the assertions are sufficient, valid and relevant."
+      ]
+    },
+    {
+      "id": "1008",
+      "guideline_id": "2008",
+      "category": "General Standards (1000 Series)",
+      "name": "Criteria",
+      "statements": [
+        "1008.1 IT audit and assurance practitioners shall select criteria, against which the subject matter will be assessed, that are objective, complete, relevant, reliable, measurable, understandable, widely recognized, authoritative, and understood by, or available to, all readers and users of the report.",
+        "1008.2 IT audit and assurance practitioners shall consider the acceptability of the criteria and focus on criteria that are recognized, authoritative and publicly available."
+      ]
+    },
+    {
+      "id": "1201",
+      "guideline_id": "2201",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Risk Assessment in Planning",
+      "statements": [
+        "1201.1 The IT audit and assurance function shall use an appropriate risk assessment approach (i.e., data-driven with both quantitative and qualitative factors) and supporting methodology to develop the overall IT audit plan and to determine priorities for the effective allocation of IT audit resources.",
+        "1201.2 IT audit and assurance practitioners shall identify and assess risk relevant to the area under review when planning individual engagements.",
+        "1201.3 IT audit and assurance practitioners shall consider subject matter risk, audit risk and related exposure to the enterprise when planning audit engagements."
+      ]
+    },
+    {
+      "id": "1202",
+      "guideline_id": "2202",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Audit Scheduling",
+      "statements": [
+        "1202.1 The IT audit and assurance function shall establish an overall strategic plan resulting in short-term and long-term audit schedules.",
+        "1202.2 Both short-term and long-term audit schedules should be agreed upon with those charged with governance and oversight (e.g., audit committee) and communicated within the enterprise.",
+        "1202.3 The IT audit and assurance function shall modify its short-term and/or long-term audit schedules to be responsive to organizational needs (i.e., unexpected events or unplanned initiatives)."
+      ]
+    },
+    {
+      "id": "1203",
+      "guideline_id": "2203",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Engagement Planning",
+      "statements": [
+        "1203.1 IT audit and assurance practitioners shall plan each IT audit and assurance engagement to address the nature, timing and extent of audit procedures to be performed (Areas, Objectives, Scope, Resources, Timeline, Laws/Standards, Risk-based approach, Technology/Data analysis, Cost vs benefits, Escalation protocols).",
+        "1203.2 IT audit and assurance practitioners shall develop and document an IT audit and assurance engagement audit program that describes the step-by-step procedures and instructions to be used to complete the audit."
+      ]
+    },
+    {
+      "id": "1204",
+      "guideline_id": "2204",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Performance and Supervision",
+      "statements": [
+        "1204.1 IT audit and assurance practitioners shall conduct the work in accordance with the approved IT audit plan to cover identified risk, and within the agreed-on schedule.",
+        "1204.2 IT audit and assurance practitioners shall provide supervision to IT audit staff for whom they have supervisory responsibility.",
+        "1204.3 IT audit and assurance practitioners shall accept only tasks that are within their knowledge and skills.",
+        "1204.4 IT audit and assurance practitioners shall obtain and preserve sufficient and appropriate evidence to achieve the audit objectives.",
+        "1204.5 IT audit and assurance practitioners shall document the audit process and describe the audit work and the audit evidence that support findings and conclusions.",
+        "1204.6 IT audit and assurance practitioners' findings and conclusions are to be supported by root cause analysis and interpretation of this evidence.",
+        "1204.7 IT audit and assurance practitioners shall provide an appropriate audit opinion or conclusion and include any scope limitation."
+      ]
+    },
+    {
+      "id": "1205",
+      "guideline_id": "2205",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Evidence",
+      "statements": [
+        "1205.1 IT audit and assurance practitioners shall obtain sufficient and appropriate evidence to draw reasonable conclusions.",
+        "1205.2 Applying professional skepticism, IT audit and assurance practitioners shall evaluate the sufficiency of evidence obtained to support conclusions and achieve engagement objectives.",
+        "1205.3 Along with other working papers, IT audit and assurance practitioners shall preserve evidence for a time period that aligns with formally defined and approved retention periods."
+      ]
+    },
+    {
+      "id": "1206",
+      "guideline_id": "2206",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Using the Work of Other Experts",
+      "statements": [
+        "1206.1 IT audit and assurance practitioners shall consider using the work of other experts for the engagement, where appropriate.",
+        "1206.2 IT audit and assurance practitioners shall assess and approve the adequacy of the other experts' professional qualifications, competencies, relevant experience, resources, independence and quality-control processes prior to the engagement.",
+        "1206.3-1206.7 Practitioners shall assess, review and evaluate the work of other experts, apply additional test procedures if evidence is insufficient, and include any scope limitation."
+      ]
+    },
+    {
+      "id": "1207",
+      "guideline_id": "2207",
+      "category": "Performance Standards (1200 Series)",
+      "name": "Irregularities and Illegal Acts",
+      "statements": [
+        "1207.1 IT audit and assurance practitioners shall consider the risk of irregularities and illegal acts during the engagement.",
+        "1207.2 IT audit and assurance practitioners shall document and communicate irregularities or illegal acts to the appropriate party in a timely manner."
+      ]
+    },
+    {
+      "id": "1401",
+      "guideline_id": "2401",
+      "category": "Reporting Standards (1400 Series)",
+      "name": "Reporting",
+      "statements": [
+        "1401.1 IT audit and assurance practitioners shall provide a report to communicate the results of each engagement.",
+        "1401.2 IT audit and assurance practitioners shall ensure findings in the audit report are supported by sufficient and appropriate evidence."
+      ]
+    },
+    {
+      "id": "1402",
+      "guideline_id": "2402",
+      "category": "Reporting Standards (1400 Series)",
+      "name": "Follow-up Activities",
+      "statements": [
+        "1402.1 IT audit and assurance practitioners shall monitor and periodically report to those charged with governance and oversight of the audit function management's progress on findings and recommendations.",
+        "1402.2 Progress on the overall status of the implementation of audit findings should be regularly reported to the audit committee.",
+        "1402.3 Where it is determined that the risk related to a finding has been accepted and is greater than the enterprise's risk appetite, this risk acceptance should be discussed with senior management and brought to the attention of the audit committee and/or board of directors."
+      ]
+    }
+  ],
+  "soxit_key_controls": [
+    {
+      "id": "SOXIT.01.00.00.C1",
+      "raw_id": "SOXIT.01.00.00.C1",
+      "domain": "Program Development",
+      "description": "Varying levels of project documentation should be appropriately documented, approved by all respective function and follow formal SDLC methodology.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "SDLC document are exist and approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "SDLC document are reviewed at regular intervals or when significant changes occur to ensure its continuing suitability, adequacy, and effectiveness. The revised policy should be also approved by appropriate level of management"
+        },
+        {
+          "code": "TDE-C",
+          "text": "SDLC document are published and communicated to all relevant employees and related parties in a form that is accessible and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "SDLC content should cover at the minimum: (1) Stages in the system development life-cycle; (2) Involvement of users in the initiation phase / business case; (3) Scope, roles & responsibilities of stakeholders related with the process; (4) Compliance to corporate Information Security Policy; (5) Requirement on control consideration; (6) Testing strategy which might cover: provisional acceptance test, system integration testing, loand & stress testing, and user acceptance testing; (7) Data migration and data conversion process; (8) Fallback procedure; (9) Separation among development and production server; (10) Post implementation review."
+        },
+        {
+          "code": "TDE-E",
+          "text": "References to other documentation which support the policy, e.g. detailed standard of procedures, standardize form are available to support the effective usage of the SDLC methodology."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Project documentation properly documented and approved by all related function(s) as required by SDLC procedures."
+        }
+      ],
+      "pbc_documents": [
+        "SDLC Document",
+        "One sample of complete program development project documentation"
+      ]
+    },
+    {
+      "id": "SOXIT.01.00.00.C2",
+      "raw_id": "SOXIT.01.00.00.C2",
+      "domain": "Program Development",
+      "description": "The design of application should consider security and controls aspect that able to provide accurate, authorized and valid transaction processing.",
+      "tde_attributes": [],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Security requirement and design of controls in application should be included in the conceptual design and detailed design phases as part of developing and/or acquiring the application"
+        }
+      ],
+      "pbc_documents": [
+        "Documentation of Requirement Specification that covers security and control requirements"
+      ]
+    },
+    {
+      "id": "SOXIT.01.00.00.C3",
+      "raw_id": "SOXIT.01.00.00.C3",
+      "domain": "Program Development",
+      "description": "For any project that require data conversion or data migration, a data conversion or migration strategy is developed and followed to ensure data accuracy and validity.",
+      "tde_attributes": [],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Data conversion / migration strategy scenario/procedure should be defined prior to data migration / conversion processes and approved by all related function(s)"
+        },
+        {
+          "code": "TOE-B",
+          "text": "Problem and issue that may raise during the conversion or migration process are managed properly."
+        },
+        {
+          "code": "TOE-C",
+          "text": "The result of data conversion / migration result should be agreed and accepted by the data owner or respective business user."
+        }
+      ],
+      "pbc_documents": [
+        "Data Conversion/migration and rollback Procedure",
+        "Documentation of data conversion/migration testing",
+        "Documentation of one sample of follow up action to resolve problem in data conversion"
+      ]
+    },
+    {
+      "id": "SOXIT.01.00.00.C4",
+      "raw_id": "SOXIT.01.00.00.C4",
+      "domain": "Program Development",
+      "description": "A testing strategy is developed and followed for all system development in applications and infrastructure technology, which may addresses unit, system, integration and user acceptance-level testing, to ensure deployed systems operate as intended.",
+      "tde_attributes": [],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "The testing strategy coverage should be adequately developed based on the requirement specification to cover relevant functionality of the system and should be established prior to actual testing, to ensure the expected result or objective on the functionality of the system in line with the requirement. The plan are reviewed and approved by related function(s)."
+        },
+        {
+          "code": "TOE-B",
+          "text": "All required test should be performed in accordance with the testing strategy and approved by authorized function(s)"
+        },
+        {
+          "code": "TOE-C",
+          "text": "User acceptance testing will involved business users in order to evaluate the system’s ability to meet business and functional requirements."
+        }
+      ],
+      "pbc_documents": [
+        "Documentation of system testing strategy",
+        "Documentation of System Integration Testing (SIT)",
+        "Documentation of system testing plan",
+        "Documentation of one sample of follow up action to SIT and system testing result",
+        "Documentation of UAT plan"
+      ]
+    },
+    {
+      "id": "SOXIT.02.00.00.C1",
+      "raw_id": "SOXIT.02.00.00.C1",
+      "domain": "Program Changes",
+      "description": "Requests for program changes, maintenance and emergency changes are logged, approved, documented and subject to formal change management and SDLC procedures.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for Change Management are exist and approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "Change Management document are reviewed at regular intervals or when significant changes occur to ensure its continuing suitability, adequacy, and effectiveness. The revised policy should be also approved by appropriate level of management"
+        },
+        {
+          "code": "TDE-C",
+          "text": "Change Management document are published and communicated to all relevant employees and related parties in a form that is accessible and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "The Change Management procedures should cover at the minimum : (1) The life cycle of Change Management process ; (2) Involvement of application/data owner & management approval; (3) Impact analysis, prioritize ; (4) Test plan requirement ; (5) UAT and documentation of testing results, (6) Fallback procedure; (7) Versioning control; (8) Separation among development and production server; (9) Emergency change: (10) Roles & responsibilities."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Change Request are managed properly in structured workflow to ensure all changes to the system are logged and provide a historical trail of the change implementation."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Change request are prioritized based on level of criticality to ensure timeliness of resolution on critical change."
+        },
+        {
+          "code": "TOE-C",
+          "text": "All required documentation should be prepared, follows change management procedure and completed with appropriate approval from all related function(s)"
+        },
+        {
+          "code": "TOE-D",
+          "text": "Emergency change request or unplanned request should follow standard change management procedure where documentation and testing must be performed possibly after implementation of the emergency changes."
+        }
+      ],
+      "pbc_documents": [
+        "Change Request – currently existing Procedure",
+        "Documentation of one sample of program changes"
+      ]
+    },
+    {
+      "id": "SOXIT.02.00.00.C2",
+      "raw_id": "SOXIT.01.00.00.C2",
+      "domain": "Program Changes",
+      "description": "Testing should be performed before applying any changes into production",
+      "tde_attributes": [],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Depending on the complexity of the change, prior to change implementation, change implementer should prepare, testing scenario."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Testing activity should follow the testing scenario and the result should be agreed by the authorized business user"
+        }
+      ],
+      "pbc_documents": [
+        "Documentation of testing perform on program changes"
+      ]
+    },
+    {
+      "id": "SOXIT.02.00.00.C3",
+      "raw_id": "SOXIT.01.00.00.C3",
+      "domain": "Program Changes",
+      "description": "The production environment is separated from development environment and only accessible by authorized personnel only.",
+      "tde_attributes": [],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Development and production servers are properly segregated."
+        },
+        {
+          "code": "TOE-B",
+          "text": "All changes must be performed in development environment first, except for emergency changes or any small changes that will not affect the functionality of the system."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Personnel responsible for development of application and operation are properly segregated."
+        }
+      ],
+      "pbc_documents": [
+        "List of production and development server",
+        "List of user in production and development server"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C1",
+      "raw_id": "SOXIT.03.00.00.C1",
+      "domain": "Access to Program and Data",
+      "description": "Every system users should be authenticated using a unique user account and using a password which in compliance with company policy.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "The system are able to support at least two factor authentication method i.e. user-name and password"
+        },
+        {
+          "code": "TDE-B",
+          "text": "The system are able to enforce password standard as stated in the IT Security policy i.e. 8 characters, complexity, periodically changed etc."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "User ID should able to be related to employee identification."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Account that used by application or non-user account should be identified and the password should be kept and only be known by authorized person."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Privileged user or administrative account (i.e. Admin, root, dba etc.) should be assigned and maintained by System Admin only."
+        },
+        {
+          "code": "TOE-D",
+          "text": "System password is set to follow corporate policy on password standard. Any deviation to the standard should be documented and supported with proper justification."
+        },
+        {
+          "code": "TOE-E",
+          "text": "User/Password sharing is strictly prohibited. User sharing is allowed once a risk assessment is completed and approved by management."
+        }
+      ],
+      "pbc_documents": [
+        "Password setting - Screen Capture",
+        "Login aplikasi – Screen Capture"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C2",
+      "raw_id": "SOXIT.03.00.00.C2",
+      "domain": "Access to Program and Data",
+      "description": "Creation and maintenance of all user accounts require approval which follows company policy and given based on user's job roles & responsibilities.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures and workflow for user access management (creation, modification, and deletion) exist and are approved by appropriate level of management. The procedures should cover at the minimum but not limited to all stages in the life-cycle of user access management, scope of work, and roles & responsibilities."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g. application owner, application custodian, end-user, in a form that is accessible, and understandable for intended readers."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "User access creation/modification requests are properly documented based on a formal process."
+        },
+        {
+          "code": "TOE-B",
+          "text": "User access creation/modification requests are approved by appropriate level of management as stated in procedures."
+        },
+        {
+          "code": "TOE-C",
+          "text": "User access rights granted agrees with the access rights that were approved based on User Access Matrix."
+        }
+      ],
+      "pbc_documents": [
+        "System Authentication (application login screen) – Screen Capture",
+        "User Account List (App + OS)",
+        "Non User Account List (App + OS)",
+        "Privileged Account List (App + OS)",
+        "System parameter Setting – Screen Capture"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C3",
+      "raw_id": "SOXIT.03.00.00.C3",
+      "domain": "Access to Program and Data",
+      "description": "Access to system for terminated and transferred employee /non-employee/vendor will be deleted timely.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Process to ensure timeliness of employee access revocation has been established."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Access to company information asset are deleted timely after effective termination/mutation date at the latest."
+        }
+      ],
+      "pbc_documents": [
+        "User Access Request – Division /app level Procedure",
+        "User Creation List for the period of Jan-Jun 2018 (population)",
+        "Documentation of one sample of User Creation form",
+        "User Modification List for the period of Jan-Jun 2018 (population)",
+        "Documentation of one sample of User Modification form"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C4",
+      "raw_id": "SOXIT.03.00.00.C4",
+      "domain": "Access to Program and Data",
+      "description": "Periodic user access review are performed to confirm user access right and privileges.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for periodic user access review (UAR) exist and are approved by appropriate level of management. The procedures should cover at the minimum but not limited to all stages in the life-cycle of periodic user access review, scope of review, and roles & responsibilities."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "User Access Review are performed and properly documented based on a formal process."
+        },
+        {
+          "code": "TOE-B",
+          "text": "User Access Review are performed to ensure that all users are still valid and having proper user access privilege which refer to UAM and SoD Matrix."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Follow-up actions (if any) towards the result for User Accces Review are approved by appropriate level of management."
+        }
+      ],
+      "pbc_documents": [
+        "User Deletion/Access Revocation – currently existing procedure",
+        "Notification from HR Operation on employee",
+        "Documentation of one sample of User Deletion/Access Revocation"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C5",
+      "raw_id": "SOXIT.03.00.00.C5",
+      "domain": "Access to Program and Data",
+      "description": "User Access Matrix (UAM) and/or Segregation of Duties (SoD) matrix are developed as the reference base for user access assignment.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Guidance to aide the development of User Access Matrix and Segregation of Duties Matrix are available and disseminated to all relevant parties."
+        },
+        {
+          "code": "TDE-B",
+          "text": "User Access Matrix contains sufficient information to reflect level of access in application and company organizational structure."
+        },
+        {
+          "code": "TDE-C",
+          "text": "Segregation of duties Matrix covers identification of critical transaction and separation on sequence of transaction."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "UAM and SOD matrix are properly documented and approved by appropriate level of management"
+        },
+        {
+          "code": "TOE-B",
+          "text": "UAM and SOD Matrix are used by the system administrator as the base of user access assignment."
+        }
+      ],
+      "pbc_documents": [
+        "User Access Review – currently existing procedure",
+        "User Access Review – Report",
+        "Documentation of one sample of follow up action towards the result for User Accces Review"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C6",
+      "raw_id": "SOXIT.03.00.00.C6",
+      "domain": "Access to Program and Data",
+      "description": "Security log are activated and monitored to detect any suspicious activity on critical process and transaction.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "The system and its supporting infrastructure (operating system, database) are able to produce system log that required for security monitoring purpose."
+        },
+        {
+          "code": "TDE-B",
+          "text": "Process and procedures for security log monitoring are exist and approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-C",
+          "text": "Security log monitoring include review of on the use of privileged accounts e.g., sys admin, root, administrator, dba etc.."
+        },
+        {
+          "code": "TDE-D",
+          "text": "Security log monitoring include review of unauthorized access attempts e.g., failed login, rejected user actions or any suspicious activities."
+        },
+        {
+          "code": "TDE-E",
+          "text": "Security log monitoring include review of changes to, attempts to change system security settings and attempt to change/alter of audit log and controls setting."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Security log monitoring are performed and documented based on a formal process."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Security log monitoring are performed regularly on timely basis."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Immediate actions to follow up the result from security monitoring are performed on timely basis."
+        },
+        {
+          "code": "TOE-D",
+          "text": "Follow-up action results towards the monitoring are informed to relevant management. Any open issue is supported by formal risk assessment or justification document."
+        }
+      ],
+      "pbc_documents": [
+        "Security log monitoring – currently existing procedure",
+        "System parameter setting for security logging – Screen capture",
+        "Documentation of security log monitoring – Report",
+        "Documentation of a sample of follow up action to security log monitoring – Report"
+      ]
+    },
+    {
+      "id": "SOXIT.03.00.00.C7",
+      "raw_id": "SOXIT.03.00.00.C7",
+      "domain": "Access to Program and Data",
+      "description": "Data Centre environment is adequately protected and access to facilities is restricted to authorized personnel which requires appropriate identification and reason to access the premise",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for physical access exist and are approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "The procedures should cover at the minimum but not limited to user access management, periodic user access and visitor review, scope of review, roles & responsibilities."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Physical access controls e.g., manual/electronic door lock are used to protect data center areas."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Physical entry controls e.g., manual/electronic visitor logging are used to protect data center areas."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Any activities performed by third parties and vendor should be approved by a valid working order."
+        },
+        {
+          "code": "TOE-D",
+          "text": "Access rights to the data center are reviewed at regular intervals on timely basis."
+        },
+        {
+          "code": "TOE-E",
+          "text": "Follow-up actions e.g., remove access for individuals that no longer require access (if any) towards review of access rights to data center are performed properly on timely basis."
+        },
+        {
+          "code": "TOE-F",
+          "text": "Follow-up actions e.g., investigate any unusual access (if any) towards access records and visitor logs are performed properly on timely basis."
+        },
+        {
+          "code": "TOE-G",
+          "text": "The following environmental equipments exist i.e., detector (water, smoke), handheld fire extinguishers, fire suppression systems, fireproof (walls, floors, ceilling), electrical surge protectors, UPS/generator, humidity/temperature controls to protect againts loss or damage."
+        },
+        {
+          "code": "TOE-H",
+          "text": "Above environmental equipments are maintained at regular intervals to ensure it continued availability and integrity."
+        }
+      ],
+      "pbc_documents": [
+        "Audit visit to the company's data center facility",
+        "Documentation of data center visit log"
+      ]
+    },
+    {
+      "id": "SOXIT.04.00.00.C1",
+      "raw_id": "SOXIT.04.00.00.C1",
+      "domain": "Computer Operation",
+      "description": "Problem management process are implemented to ensure every problem or incident are recorded, analyzed, resolved in a timely manner and reported to management.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for problems/incidents management exist and are approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "The procedures should cover at the minimum categorizing the incident, recording, analyzing, resolving, scope of work, roles & responsibilities."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Problems/incidents are properly recorded, analyzed and resolved using a formal process."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Problems/incidents are reported to management at regular intervals on timely basis."
+        }
+      ],
+      "pbc_documents": [
+        "Problems/incidents management – currently existing Procedure",
+        "Problems/Incidents list/documentation for the period of Jan – Jun 2018 (population)",
+        "Documentation one sample of Problems/incidents monitoring management report",
+        "Documentation one sample of follow up to Problems/incidents monitoring management report"
+      ]
+    },
+    {
+      "id": "SOXIT.04.00.00.C2",
+      "raw_id": "SOXIT.04.00.00.C2",
+      "domain": "Computer Operation",
+      "description": "Backups are run regularly for all critical systems and supporting systems data.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for backup management exist and are approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "The procedures should cover at the minimum : retention period, rotation, frequency, scope, roles & responsibilities."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Backup processes are performed inline with formal process at regular intervals on timely basis and properly documented."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Backup processes results documents are reviewed & approved by appropriate level of management."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Follow-up actions (if any) towards failed backup process results are resolved properly."
+        }
+      ],
+      "pbc_documents": [
+        "Backup - currently existing Procedure",
+        "Backup Configuration –Screen shot",
+        "Documentation of backup monitoring process – Report"
+      ]
+    },
+    {
+      "id": "SOXIT.04.00.00.C3",
+      "raw_id": "SOXIT.04.00.00.C3",
+      "domain": "Computer Operation",
+      "description": "The restoration of backup media is periodically tested.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for restoration of backup media exist and are approved by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur and the revised procedures should also be approved by appropriate level of management to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        },
+        {
+          "code": "TDE-D",
+          "text": "The procedures should cover at the minimum but not limited to frequency, scope, roles & responsibilities."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "Backup restoration testing is performed in line with formal process at regular intervals on timely basis and properly documented,."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Backup restoration testing results documents are reviewed & approved by appropriate level of management."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Follow-up actions (if any) towards failed restoration testing results are resolved properly ."
+        }
+      ],
+      "pbc_documents": [
+        "Restoration of backup - currently existing Procedure",
+        "Documentation of restore testing"
+      ]
+    },
+    {
+      "id": "SOXIT.04.00.00.C4",
+      "raw_id": "SOXIT.04.00.00.C4",
+      "domain": "Computer Operation",
+      "description": "Job scheduling and process monitoring are performed to ensures that the required system processing is timely executed and succeed.",
+      "tde_attributes": [
+        {
+          "code": "TDE-A",
+          "text": "Procedures for job scheduling and monitoring exist and formalized by appropriate level of management."
+        },
+        {
+          "code": "TDE-B",
+          "text": "The procedures are reviewed at regular intervals or when significant changes occur to ensure its continuing suitability, adequacy, and effectiveness."
+        },
+        {
+          "code": "TDE-C",
+          "text": "The procedures are published and communicated to all relevant parties e.g., application owner, application custodian, in a form that is accessible, and understandable for intended readers."
+        }
+      ],
+      "toe_attributes": [
+        {
+          "code": "TOE-A",
+          "text": "List of job schedule and monitoring task are available, documented and approved."
+        },
+        {
+          "code": "TOE-B",
+          "text": "Job scheduling and monitoring processes are performed as scheduled and properly documented."
+        },
+        {
+          "code": "TOE-C",
+          "text": "Job scheduling results documents are reviewed and approved by appropriate level of management."
+        },
+        {
+          "code": "TOE-D",
+          "text": "Follow-up actions (if any) towards any problem during the process are resolved properly."
+        }
+      ],
+      "pbc_documents": [
+        "Job scheduling and monitoring – currently existing Procedure",
+        "Documentation of job schedule monitoring - Report"
+      ]
+    }
+  ]
+}

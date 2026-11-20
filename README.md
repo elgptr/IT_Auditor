@@ -116,3 +116,34 @@ python skills/id-it-regulatory-auditor/scripts/id_reg_cli.py kami-calc --se-scor
 python skills/id-it-regulatory-auditor/scripts/id_reg_cli.py ojk-cyber --inherent-risk 4 --maturity-level 2
 python skills/id-it-regulatory-auditor/scripts/id_reg_cli.py uupdp-check --annual-revenue 500000000000 --hours-since-breach 80 --specific-data
 ```
+
+---
+
+## 🔌 5. Model Context Protocol (FastMCP) Server
+
+Ekosistem `IT_Auditor` menyediakan interface FastMCP (`stdio`) agar knowledge audit dapat dipanggil secara *on-demand* oleh AI agents (seperti Claude Code, Cursor, Claude Desktop, atau pipeline agen ERATRUST):
+
+### Cara Menjalankan MCP Server
+```bash
+python -m src.it_auditor_mcp
+```
+
+### Konfigurasi Klien MCP (`~/.claude/settings.json` / Claude Desktop)
+```json
+{
+  "mcpServers": {
+    "it-auditor": {
+      "command": "python",
+      "args": ["-m", "src.it_auditor_mcp"],
+      "cwd": "D:/project/IT_Auditor"
+    }
+  }
+}
+```
+
+### Daftar Tool MCP yang Tersedia
+1. `uupdp_lookup_control`: Evaluasi kepatuhan UU PDP 27/2022, batas 72 jam notifikasi insiden, dan potensi denda 2%.
+2. `audit_sampling_calculator`: Kalkulasi ukuran sampel audit statistik standar IIA/CISA untuk pengujian bukti.
+3. `cobit_practice_lookup`: Lookup objektif, praktik tata kelola, dan aktivitas COBIT 2019.
+4. `audit_crosswalk_mapper`: Pemetaan silang regulasi nasional (POJK, UU PDP, Indeks KAMI) ke standar COBIT 2019 & CISA.
+
